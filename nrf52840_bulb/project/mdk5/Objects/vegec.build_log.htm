@@ -1,0 +1,85 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.23.0.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: X VEGEC, HP Inc., LIC=SDAUH-WVL93-2YIV0-B12L6-EKBDC-99BJR
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.23
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.23
+Dialog DLL:      DCM.DLL V1.15.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.23.0
+Dialog DLL:      TCM.DLL V1.27.0.0
+ 
+<h2>Project:</h2>
+C:\Users\枭\Desktop\ble_app_vegec\project\mdk5\vegec.uvprojx
+Project File Date:  09/20/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'nrf52840_qfaa'
+compiling main.c...
+..\..\app\w5500\w5500.h(213): warning:  #47-D: incompatible redefinition of macro "TRUE"  (declared at line 8 of "..\..\app\esp8266\esp8266.h")
+  #define TRUE	0xff
+..\..\app\w5500\w5500.h(214): warning:  #47-D: incompatible redefinition of macro "FALSE"  (declared at line 7 of "..\..\app\esp8266\esp8266.h")
+  #define FALSE	0x00
+..\..\app\w5500\w5500.h(271): warning:  #1295-D: Deprecated declaration W5500_Socket_Set - give arg types
+  void W5500_Socket_Set();
+..\..\app\w5500\w5500.h(276): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\app\tm1914a\tm1914.h(13): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\app\main.c(45): warning:  #177-D: variable "RxCnt"  was declared but never referenced
+  		uint8_t RxCnt = 0;             //UART接收字节数
+..\..\app\main.c(46): warning:  #177-D: variable "UartRxBuf"  was declared but never referenced
+  	  uint8_t UartRxBuf[RXBUF_LEN];  //UART接收缓存
+..\..\app\main.c(13): warning:  #177-D: variable "my_tx_buf"  was declared but never referenced
+  static uint8_t    my_tx_buf[4096];  
+..\..\app\main.c(15): warning:  #177-D: variable "my_rx_buf"  was declared but never referenced
+  static uint8_t    my_rx_buf[4096];  
+..\..\app\main.c: 9 warnings, 0 errors
+linking...
+Program Size: Code=14304 RO-data=892 RW-data=124 ZI-data=13140  
+FromELF: creating hex file...
+".\Objects\vegec.axf" - 0 Error(s), 9 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+Package Vendor: NordicSemiconductor
+                http://developer.nordicsemi.com/nRF5_SDK/pieces/nRF_DeviceFamilyPack/NordicSemiconductor.nRF_DeviceFamilyPack.8.17.0.pack
+                NordicSemiconductor::Device:Startup:8.17.0
+                Nordic Semiconductor nRF ARM devices Device Family Pack.
+   * Component: Startup Version: 8.17.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_nrf52840_qfaa
+  D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  D:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.17.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+
+   * Component: NordicSemiconductor::Device:Startup:8.17.0
+      Source file:   Device\Source\arm\arm_startup_nrf52840.s
+      Include file:  Device\Include\system_nrf52840.h
+      Source file:   Device\Source\system_nrf52840.c
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
